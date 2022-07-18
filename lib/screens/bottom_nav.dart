@@ -14,6 +14,10 @@ class _BottomBarState extends State<BottomBar> {
       appBar: AppBar(
         title: const Text('flight ticket'),
       ),
+      body: Center(
+        child: Text("my body"),
+
+      ),
     );
   }
 }
