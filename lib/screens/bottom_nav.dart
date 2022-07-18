@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
 
@@ -11,11 +12,8 @@ class _BottomBarState extends State<BottomBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:  const Text('flight ticket'),
-
-
+        title: const Text('flight ticket'),
       ),
-
     );
   }
 }
