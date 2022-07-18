@@ -1,3 +1,4 @@
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -24,7 +25,7 @@ class _BottomBarState extends State<BottomBar> {
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: Color(0xFF526480),
         items: const [
-         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+         BottomNavigationBarItem(icon: Icon(FluentSystemIcons.ic_fluent_home_regular), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
         BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'profile'),
