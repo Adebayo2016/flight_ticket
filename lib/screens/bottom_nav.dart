@@ -13,7 +13,7 @@ class BottomBar extends StatefulWidget {
 
 class _BottomBarState extends State<BottomBar> {
 
-  int SelectedIndex=0;
+  int _SelectedIndex=0;
 
   static final List<Widget> _widgetOptions= <Widget>[
     Text("home"),
@@ -30,7 +30,7 @@ class _BottomBarState extends State<BottomBar> {
         title: const Text('flight ticket'),
       ),
       body:  Center(
-        child: _widgetOptions[2],
+        child: _widgetOptions[_SelectedIndex],
       ),
       bottomNavigationBar:  BottomNavigationBar(
         elevation: 10,
