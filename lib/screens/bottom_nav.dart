@@ -9,7 +9,7 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _SelectedIndex = 1;
+  int _SelectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
     Text("home"),
@@ -19,7 +19,9 @@ class _BottomBarState extends State<BottomBar> {
   ];
 
   void _OnItemSelected(int index) {
-    _SelectedIndex = index;
+    setState(() {
+      _SelectedIndex = index;
+    });
   }
 
   @override
@@ -32,6 +34,7 @@ class _BottomBarState extends State<BottomBar> {
         child: _widgetOptions[_SelectedIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _SelectedIndex,
         onTap: _OnItemSelected,
         elevation: 10,
         showSelectedLabels: false,
