@@ -16,8 +16,14 @@ class _BottomBarState extends State<BottomBar> {
       ),
       body: Center(
         child: Text("my body"),
-
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+
+      ],),
     );
   }
 }
