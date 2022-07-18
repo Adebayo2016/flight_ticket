@@ -17,10 +17,12 @@ class _BottomBarState extends State<BottomBar> {
       body: const Center(
         child: Text("my body"),
       ),
-      bottomNavigationBar:  BottomNavigationBar(items: const [
+      bottomNavigationBar:  BottomNavigationBar(
+        elevation: 10,
+        items: const [
          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
+        BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
 
       ],),
