@@ -14,11 +14,11 @@ class _BottomBarState extends State<BottomBar> {
       appBar: AppBar(
         title: const Text('flight ticket'),
       ),
-      body: Center(
+      body: const Center(
         child: Text("my body"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+      bottomNavigationBar:  BottomNavigationBar(items: const [
+         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
