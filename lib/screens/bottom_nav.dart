@@ -10,6 +10,11 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title:  const Text('flight ticket'),
+
+
+      ),
 
     );
   }
