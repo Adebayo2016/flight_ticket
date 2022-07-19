@@ -9,7 +9,10 @@ class Styles {
   static Color  bgColor = Color(0xffeeedf3);
   static Color orangeColor = Color(0xFF526799);
   static TextStyle textStyle= TextStyle(fontSize: 16,color: textColor, fontWeight: FontWeight.w500);
-  static TextStyle headline= TextStyle(fontSize: 16,color: textColor, fontWeight: FontWeight.w500);
+  static TextStyle headlineStyle= TextStyle(fontSize: 26,color: textColor, fontWeight: FontWeight.w500);
+  static TextStyle headlineStyle2= TextStyle(fontSize: 26,color: textColor, fontWeight: FontWeight.w500);
+
+
 
 
 }
