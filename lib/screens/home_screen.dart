@@ -6,7 +6,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFeeedf2),
+      backgroundColor: const Color(0xFFeeedf2),
       body: ListView(
         children: [
           Container(
@@ -14,8 +14,17 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text("Good Morning"),
-                    Image.asset("assets/image/img_1.png"),
+                    const Text("Good Morning"),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                          image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage('assets/images/img_1.png'),
+                      )),
+                    )
                   ],
                 )
               ],
