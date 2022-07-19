@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flight/utils/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -6,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFeeedf2),
+      backgroundColor: Styles.bgColor,
       body: ListView(
         children: [
           Container(
@@ -20,8 +21,8 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Good Morning"),
-                        Text('Book Tickets'),
+                        Text("Good Morning", style: Styles.headlineStyle3,),
+                        Text('Book Tickets', style: Styles.headlineStyle,),
                       ],
                     ),
 
