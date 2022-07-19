@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           Container(
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
                 Row(
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
 
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Good Morning"),
                         Text('Book Tickets'),
