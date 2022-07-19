@@ -1,5 +1,6 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:my_flight/screens/home_screen.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class _BottomBarState extends State<BottomBar> {
   int _SelectedIndex = 0;
 
   static final List<Widget> _widgetOptions = <Widget>[
-    Text("home"),
+   HomeScreen(),
     Text('Search'),
     Text('Tickets'),
     Text('Profile'),
@@ -34,6 +35,7 @@ class _BottomBarState extends State<BottomBar> {
         child: _widgetOptions[_SelectedIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.shifting,
         currentIndex: _SelectedIndex,
         onTap: _OnItemSelected,
         elevation: 10,
