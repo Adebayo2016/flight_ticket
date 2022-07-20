@@ -81,10 +81,12 @@ class HomeScreen extends StatelessWidget {
                     ))
                   ],
                 ),
-                TicketView(),
+
               ],
+
             ),
           ),
+          TicketView(),
         ],
       ),
     );

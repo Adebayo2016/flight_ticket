@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_flight/utils/app_layout.dart';
 import 'package:my_flight/utils/app_styles.dart';
 
+import '../utils/thick_container.dart';
+
 class TicketView extends StatelessWidget {
   const TicketView({Key? key}) : super(key: key);
 
@@ -13,7 +15,7 @@ class TicketView extends StatelessWidget {
       width: size.width,
       height: 200,
       child: Container(
-        padding: const EdgeInsets.only(left: 12),
+        padding: const EdgeInsets.only(left: 16),
         child: Column(
           children: [
             Container(
@@ -22,7 +24,7 @@ class TicketView extends StatelessWidget {
                borderRadius:BorderRadius.only(topLeft: Radius.circular(21), topRight: Radius.circular(21))
              ),
 
-              padding: EdgeInsets.all(16),
+              padding: const  EdgeInsets.all(16),
               child: Column(children: [
                 Row(
                   children: [
@@ -30,7 +32,14 @@ class TicketView extends StatelessWidget {
                       'Lag',
                       style: Styles.headlineStyle3.copyWith(color: Colors.white),
                     ),
-                    const Spacer(),
+                    //expanded Widget takes empty spaces and divide them among widgets
+                    Expanded(child: Container()),
+                    const ThickContainer(),
+                    Expanded(child: Container(
+
+                    )),
+                    const ThickContainer(),
+                    Expanded(child: Container()),
                     Text(
                       'Abuja',
                       style: Styles.headlineStyle3.copyWith(color: Colors.white),
