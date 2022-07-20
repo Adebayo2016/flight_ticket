@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
                           style: Styles.headlineStyle,
                         ),
                       ],
+
                     ),
                     Container(
                       height: 50,
