@@ -17,7 +17,7 @@ class TicketView extends StatelessWidget {
         child: Column(
           children: [
             Container(
-             decoration: BoxDecoration(
+             decoration: const BoxDecoration(
                  color: Color(0xFF526799),
                borderRadius:BorderRadius.only(topLeft: Radius.circular(21), topRight: Radius.circular(21))
              ),
@@ -28,12 +28,12 @@ class TicketView extends StatelessWidget {
                   children: [
                     Text(
                       'Lag',
-                      style: Styles.headlineStyle3,
+                      style: Styles.headlineStyle3.copyWith(color: Colors.white),
                     ),
                     const Spacer(),
                     Text(
                       'Abuja',
-                      style: Styles.headlineStyle3,
+                      style: Styles.headlineStyle3.copyWith(color: Colors.white),
                     ),
                   ],
                 )
