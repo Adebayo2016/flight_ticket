@@ -41,7 +41,7 @@ class TicketView extends StatelessWidget {
 
                         builder: (BuildContext context, BoxConstraints constraints) {
 
-                          print ('width is ${constraints.constrainWidth()}');
+
 
                           return  Flex(direction: Axis.horizontal,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
