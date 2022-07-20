@@ -45,7 +45,7 @@ class TicketView extends StatelessWidget {
 
                           return  Flex(direction: Axis.horizontal,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: List.generate(5, (index) => Text('-')),
+                            children: List.generate((constraints.constrainWidth()/6).floor(), (index) => Text('-')),
 
                           );
                         },
