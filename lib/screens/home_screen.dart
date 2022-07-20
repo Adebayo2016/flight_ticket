@@ -1,6 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:my_flight/screens/ticket_view.dart';
 import 'package:my_flight/utils/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -79,7 +80,8 @@ class HomeScreen extends StatelessWidget {
                           Styles.textStyle.copyWith(color: Styles.primaryColor),
                     ))
                   ],
-                )
+                ),
+                TicketView(),
               ],
             ),
           ),
