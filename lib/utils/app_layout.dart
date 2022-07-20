@@ -5,7 +5,7 @@ class AppLayout {
 
   static getSize(BuildContext context){
 
-    return MediaQuery.of(context).size;
+    return MediaQuery.of(context).size.width;
 
   }
 
