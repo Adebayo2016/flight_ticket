@@ -35,8 +35,22 @@ class TicketView extends StatelessWidget {
                     //expanded Widget takes empty spaces and divide them among widgets
                     Expanded(child: Container()),
                     const ThickContainer(),
-                    Expanded(child: Container(
+                    Expanded(child: SizedBox(
+                      height: 24,
+                      child: LayoutBuilder(
 
+                        builder: (BuildContext context, BoxConstraints constraints) {
+
+                          print ('width is ${constraints.constrainWidth()}');
+
+                          return  Flex(direction: Axis.horizontal,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: List.generate(5, (index) => Text('-')),
+
+                          );
+                        },
+
+                      ),
                     )),
                     const ThickContainer(),
                     Expanded(child: Container()),
