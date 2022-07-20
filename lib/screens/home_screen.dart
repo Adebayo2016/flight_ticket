@@ -48,18 +48,25 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 Gap(25),
-                Row(
-                  children: [
-                    Gap(25),
-                    Icon(
-                      FluentSystemIcons.ic_fluent_search_regular,
-                      color: Color(0xffbfc205),
-                    ),
-                    Text(
-                      'Search',
-                      style: Styles.headlineStyle4,
-                    ),
-                  ],
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color:  const Color(0xFFF4F6FD)
+                  ),
+                  child: Row(
+                    children: [
+                      const Gap(25),
+                      const Icon(
+                        FluentSystemIcons.ic_fluent_search_regular,
+                        color: Color(0xffbfc205),
+                      ),
+                      Text(
+                        'Search',
+                        style: Styles.headlineStyle4,
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
