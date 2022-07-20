@@ -33,7 +33,6 @@ class HomeScreen extends StatelessWidget {
                           style: Styles.headlineStyle,
                         ),
                       ],
-
                     ),
                     Container(
                       height: 50,
@@ -49,11 +48,11 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Gap(25),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color:  const Color(0xFFF4F6FD)
-                  ),
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color(0xFFF4F6FD)),
                   child: Row(
                     children: [
                       const Gap(25),
@@ -67,6 +66,19 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+                const Gap(40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('Upcoming Flights', style: Styles.headlineStyle2),
+                    InkWell(
+                        child: Text(
+                      'view all',
+                      style:
+                          Styles.textStyle.copyWith(color: Styles.primaryColor),
+                    ))
+                  ],
                 )
               ],
             ),
